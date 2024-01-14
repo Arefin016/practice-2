@@ -77,11 +77,25 @@ nav > ul img {
     object-fit: cover;
 }
 
+/* sponsor section */
+.sponsor{
+    width: 77%;
+    margin: 50px auto;
+    text-align: center;
+}
+.sponsors-img-container img{
+    margin-right: 62px;
+}
+
+
 
 /* Responsive for mobile devices */
 @media screen and (max-width:576px){
-    nav,nav > ul,.banner{
+    nav,nav > ul{
         flex-direction: column;
+    }
+    .banner{
+        flex-direction: column-reverse;
     }
     header{
         padding: 10px;
@@ -95,5 +109,29 @@ nav > ul img {
     nav .section{
         margin-bottom: 20px;
     }
-    
+    .sponsor {
+        width: 100%;
+    }
+    .sponsors-img-container img{
+        margin-right: 10px;
+    }
+}
+
+/* Responsive for medium devices */
+@media screen and (min-width:577px) and (max-width:960px) {
+    nav,nav > ul,.banner{
+        flex-direction: column;
+    }
+    .banner img{
+        width: 100%;
+    }
+    nav .section{
+        margin-bottom: 20px;
+    }
+    nav > ul{
+        gap: 10px;
+    }
+    .sponsors-img-container img{
+        margin-right: 36px;
+    }
 }
